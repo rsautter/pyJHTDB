@@ -359,9 +359,9 @@ class libJHTDB(object):
                     
                     temp = self.getCutout(
                         data_set=data_set, field=field, time_step=time_step,
-                        start=np.array(xyzs1, dtype = int),
-                        end=np.array(xyze1, dtype = int),
-                        step=np.array(step, dtype = int),
+                        start=np.array(xyzs1, dtype = np.int32),
+                        end=np.array(xyze1, dtype = np.int32),
+                        step=np.array(step, dtype = np.int32),
                         filter_width=filter_width)
                     
                     if temp is None:
